@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>កក់សណ្ឋាគារ | Explore Cambodia</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🏨 កក់សណ្ឋាគារ</h1>
+
+    <p>
+        កក់បន្ទប់សណ្ឋាគាររបស់អ្នក
+        នៅកម្ពុជា 🇰🇭
+    </p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">ទំព័រដើម</a>
+
+    <a href="តំបន់ទេសចរណ៍.html">
+        តំបន់ទេសចរណ៍
+    </a>
+
+    <a href="វប្បធម៍.html">វប្បធម៌</a>
+
+    <a href="ទំនៀមទម្លាប់.html">
+        ទំនៀមទម្លាប់
+    </a>
+
+    <a href="ប្រពៃណី.html">ប្រពៃណី</a>
+
+    <a href="ម្ហូបអាហារ.html">ម្ហូបអាហារ</a>
+
+    <a href="សណ្ឋាគារ.html"
+       class="active">
+        កក់សណ្ឋាគារ
+    </a>
+
+    <a href="ការទិញសំបុត្រ.html">
+        ទិញសំបុត្រ
+    </a>
+
+</nav>
+
+
+<section class="booking-section">
+
+    <div class="booking-container">
+
+        <h2>
+            🏨 Hotel Booking
+        </h2>
+
+        <p class="description">
+            សូមបំពេញព័ត៌មានខាងក្រោម
+            ដើម្បីកក់បន្ទប់។
+        </p>
+
+
+        <form id="bookingForm">
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    👤 ឈ្មោះអ្នកកក់
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="បញ្ចូលឈ្មោះ"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="hotel">
+                    🏨 ជ្រើសរើសសណ្ឋាគារ
+                </label>
+
+                <select id="hotel" required>
+
+                    <option value="">
+                        -- ជ្រើសរើសសណ្ឋាគារ --
+                    </option>
+
+                    <option value="40">
+                        Angkor Land Urban Boutique -
+                        (សៀមរាប)$40/យប់
+                    </option>
+
+                    <option value="55">
+                       Lotus Blanc Homestay-
+                        (បាត់ដំបង)$55/យប់
+                    </option>
+
+                    <option value="35">
+                        ANON KOH KONG HOTEL -
+                        (កោះកុង)$35/យប់
+                    </option>
+
+                    <option value="45">
+                        Raffles Hotel Le Royal Phnom Penh -
+                        (ភ្នំពេញ)$45/យប់
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="checkin">
+                    📅 ថ្ងៃចូលស្នាក់
+                </label>
+
+                <input
+                    type="date"
+                    id="checkin"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="checkout">
+                    📅 ថ្ងៃចេញ
+                </label>
+
+                <input
+                    type="date"
+                    id="checkout"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="rooms">
+                    🛏️ ចំនួនបន្ទប់
+                </label>
+
+                <input
+                    type="number"
+                    id="rooms"
+                    value="1"
+                    min="1"
+                    max="10"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="guests">
+                    👥 ចំនួនភ្ញៀវ
+                </label>
+
+                <input
+                    type="number"
+                    id="guests"
+                    value="1"
+                    min="1"
+                    max="20"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    📱 លេខទូរស័ព្ទ
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="000 000 000"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    📧 អ៊ីមែល
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required>
+
+            </div>
+
+
+            <div class="price-box">
+
+                <p>💰 តម្លៃសរុប</p>
+
+                <div
+                    class="total-price"
+                    id="totalPrice">
+
+                    $0.00
+
+                </div>
+
+                <p>💳 ត្រូវបង់កក់ 50%</p>
+
+                <div
+                    class="deposit-price"
+                    id="depositPrice">
+
+                    $0.00
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="book-button">
+
+                🏨 កក់បន្ទប់ និងបង់ប្រាក់កក់
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<div
+    class="modal"
+    id="paymentModal">
+
+    <div class="payment-box">
+
+        <button
+            class="close"
+            id="closePayment">
+
+            ×
+
+        </button>
+
+        <h2>
+            💳 បង់ប្រាក់កក់ 50%
+        </h2>
+
+        <p>
+            សូមស្កេន QR Code
+            ដើម្បីបង់ប្រាក់កក់។
+        </p>
+
+
+        <div class="qr-container">
+
+            <img
+                id="qrCode"
+                src=""
+                alt="QR Code">
+
+        </div>
+
+
+        <div class="deposit-info">
+
+            តម្លៃត្រូវបង់កក់៖
+
+            <br>
+
+            <strong id="modalDeposit">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="paid-button"
+            id="paidButton">
+
+            ✅ ខ្ញុំបានបង់ប្រាក់រួច
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- SUCCESS -->
+
+<div
+    class="modal"
+    id="successModal">
+
+    <div class="payment-box">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2 class="success-title">
+            កក់សណ្ឋាគារដោយជោគជ័យ!
+        </h2>
+
+        <p class="success-text">
+
+            អ្នកបានបង់ប្រាក់កក់ 50%
+            ដោយជោគជ័យ។
+
+            <br>
+
+            សូមអរគុណសម្រាប់ការកក់
+            ជាមួយ Explore Cambodia 🇰🇭
+
+        </p>
+
+        <button
+            class="done-button"
+            id="doneButton">
+
+            ✓ រួចរាល់
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <h2>🇰🇭 Explore Cambodia</h2>
+
+    <p>
+        Discover Cambodia •
+        Explore Culture •
+        Enjoy Your Journey
+    </p>
+
+    <p>
+        © 2026 Explore Cambodia
+    </p>
+
+</footer>
+
+
+<script>
+
+const form =
+    document.getElementById("bookingForm");
+
+const hotel =
+    document.getElementById("hotel");
+
+const checkin =
+    document.getElementById("checkin");
+
+const checkout =
+    document.getElementById("checkout");
+
+const rooms =
+    document.getElementById("rooms");
+
+const totalPrice =
+    document.getElementById("totalPrice");
+
+const depositPrice =
+    document.getElementById("depositPrice");
+
+const paymentModal =
+    document.getElementById("paymentModal");
+
+const successModal =
+    document.getElementById("successModal");
+
+const modalDeposit =
+    document.getElementById("modalDeposit");
+
+const qrCode =
+    document.getElementById("qrCode");
+
+const paidButton =
+    document.getElementById("paidButton");
+
+const closePayment =
+    document.getElementById("closePayment");
+
+const doneButton =
+    document.getElementById("doneButton");
+
+
+function calculatePrice() {
+
+    const price =
+        Number(hotel.value);
+
+    const roomCount =
+        Number(rooms.value);
+
+    const start =
+        new Date(checkin.value);
+
+    const end =
+        new Date(checkout.value);
+
+
+    if (
+        !price ||
+        !checkin.value ||
+        !checkout.value
+    ) {
+
+        totalPrice.textContent =
+            "$0.00";
+
+        depositPrice.textContent =
+            "$0.00";
+
+        return;
+    }
+
+
+    const nights =
+        (end - start) /
+        (1000 * 60 * 60 * 24);
+
+
+    if (nights <= 0) {
+
+        totalPrice.textContent =
+            "$0.00";
+
+        depositPrice.textContent =
+            "$0.00";
+
+        return;
+    }
+
+
+    const total =
+        price *
+        roomCount *
+        nights;
+
+    const deposit =
+        total * 0.5;
+
+
+    totalPrice.textContent =
+        "$" + total.toFixed(2);
+
+    depositPrice.textContent =
+        "$" + deposit.toFixed(2);
+}
+
+
+hotel.addEventListener(
+    "change",
+    calculatePrice
+);
+
+checkin.addEventListener(
+    "change",
+    calculatePrice
+);
+
+checkout.addEventListener(
+    "change",
+    calculatePrice
+);
+
+rooms.addEventListener(
+    "input",
+    calculatePrice
+);
+
+
+form.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+
+        const price =
+            Number(hotel.value);
+
+        const roomCount =
+            Number(rooms.value);
+
+        const start =
+            new Date(checkin.value);
+
+        const end =
+            new Date(checkout.value);
+
+
+        const nights =
+            (end - start) /
+            (1000 * 60 * 60 * 24);
+
+
+        if (nights <= 0) {
+
+            alert(
+                "សូមជ្រើសរើសថ្ងៃចេញឱ្យធំជាងថ្ងៃចូល។"
+            );
+
+            return;
+        }
+
+
+        const total =
+            price *
+            roomCount *
+            nights;
+
+        const deposit =
+            total * 0.5;
+
+
+        modalDeposit.textContent =
+            "$" + deposit.toFixed(2);
+
+
+        const qrData =
+            "Explore Cambodia Hotel Booking | " +
+            "Deposit 50% | $" +
+            deposit.toFixed(2);
+
+
+        qrCode.src =
+            "https://api.qrserver.com/v1/create-qr-code/" +
+            "?size=250x250&data=" +
+            encodeURIComponent(qrData);
+
+
+        paymentModal.style.display =
+            "flex";
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+);
+
+
+paidButton.addEventListener(
+    "click",
+    function() {
+
+        paymentModal.style.display =
+            "none";
+
+        successModal.style.display =
+            "flex";
+
+    }
+);
+
+
+closePayment.addEventListener(
+    "click",
+    function() {
+
+        paymentModal.style.display =
+            "none";
+
+        document.body.style.overflow =
+            "auto";
+
+    }
+);
+
+
+doneButton.addEventListener(
+    "click",
+    function() {
+
+        successModal.style.display =
+            "none";
+
+        document.body.style.overflow =
+            "auto";
+
+        form.reset();
+
+        totalPrice.textContent =
+            "$0.00";
+
+        depositPrice.textContent =
+            "$0.00";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+);
+
+</script>
+
+</body>
+</html>

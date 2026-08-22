@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ទិញសំបុត្រទេសចរណ៍ | Explore Cambodia</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🎫 ទិញសំបុត្រទេសចរណ៍</h1>
+
+    <p>
+        កក់សំបុត្ររបស់អ្នក
+        ដើម្បីចាប់ផ្តើមដំណើរកម្សាន្តនៅកម្ពុជា 🇰🇭
+    </p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">ទំព័រដើម</a>
+
+    <a href="តំបន់ទេសចរណ៍.html">
+        តំបន់ទេសចរណ៍
+    </a>
+
+    <a href="វប្បធម៍.html">វប្បធម៌</a>
+
+    <a href="ទំនៀមទម្លាប់.html">
+        ទំនៀមទម្លាប់
+    </a>
+
+    <a href="ប្រពៃណី.html">ប្រពៃណី</a>
+
+    <a href="ម្ហូបអាហារ.html">ម្ហូបអាហារ</a>
+
+    <a href="សណ្ឋាគារ.html">កក់សណ្ឋាគារ</a>
+
+    <a href="ការទិញសំបុត្រ.html"
+       class="active">
+        ទិញសំបុត្រ
+    </a>
+
+</nav>
+
+
+<section class="ticket-section">
+
+    <div class="ticket-container">
+
+        <h2>
+            🎫 Explore Cambodia
+        </h2>
+
+        <p class="description">
+            សូមបំពេញព័ត៌មានខាងក្រោម
+            ដើម្បីកក់សំបុត្រទេសចរណ៍។
+        </p>
+
+
+        <form id="ticketForm">
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    👤 ឈ្មោះអ្នកទិញ
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="destination">
+                    📍 ជ្រើសរើសតំបន់ទេសចរណ៍
+                </label>
+
+                <select id="destination" required>
+
+                    <option value="">
+                        -- ជ្រើសរើសទីកន្លែង --
+                    </option>
+
+                    <option value="angkor">
+                        ប្រាសាទអង្គរវត្ត
+                    </option>
+
+                    <option value="koh-rong">
+                        កោះកុង
+                    </option>
+
+                    <option value="kampot">
+                        កំពត
+                    </option>
+
+                    <option value="phnom-penh">
+                        ភ្នំពេញ
+                    </option>
+
+                    <option value="battambang">
+                        បាត់ដំបង
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="date">
+                    📅 កាលបរិច្ឆេទធ្វើដំណើរ
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="tickets">
+                    🎫 ចំនួនសំបុត្រ
+                </label>
+
+                <input
+                    type="number"
+                    id="tickets"
+                    min="1"
+                    max="20"
+                    value="1"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="type">
+                    🎟️ ប្រភេទសំបុត្រ
+                </label>
+
+                <select id="type" required>
+
+                    <option value="">
+                        -- ជ្រើសរើសប្រភេទ --
+                    </option>
+
+                    <option value="adult">
+                        មនុស្សពេញវ័យ
+                    </option>
+
+                    <option value="child">
+                        កុមារ
+                    </option>
+
+                    <option value="family">
+                        គ្រួសារ
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    📧 អ៊ីមែល
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    📱 លេខទូរស័ព្ទ
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="000 000 000"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="payment">
+                    💳 វិធីបង់ប្រាក់
+                </label>
+
+                <select id="payment" required>
+
+                    <option value="">
+                        -- ជ្រើសរើសវិធីបង់ប្រាក់ --
+                    </option>
+
+                    <option value="aba">
+                        ABA
+                    </option>
+
+                    <option value="acleda">
+                        ACLEDA
+                    </option>
+
+                    <option value="wing">
+                        Wing
+                    </option>
+
+                    <option value="cash">
+                        បង់ជាសាច់ប្រាក់
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="ticket-button">
+
+                🎫 ទិញសំបុត្រ
+
+            </button>
+
+        </form>
+
+
+        <div
+            id="successMessage"
+            class="success-message">
+
+            <h3>
+                ✅ កក់សំបុត្របានជោគជ័យ!
+            </h3>
+
+            <p>
+                សូមអរគុណសម្រាប់ការជ្រើសរើស
+                Explore Cambodia 🇰🇭
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>🇰🇭 Explore Cambodia</h2>
+
+    <p>
+        Discover Cambodia •
+        Explore Culture •
+        Enjoy Your Journey
+    </p>
+
+    <p>
+        © 2026 Explore Cambodia
+    </p>
+
+</footer>
+
+
+<script>
+
+const form =
+    document.getElementById("ticketForm");
+
+const successMessage =
+    document.getElementById("successMessage");
+
+
+form.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+        successMessage.style.display =
+            "block";
+
+        form.reset();
+
+        successMessage.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+);
+
+</script>
+
+</body>
+</html>
